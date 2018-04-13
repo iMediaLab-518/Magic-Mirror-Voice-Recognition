@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Created on Wed Apr 11 21:17:05 2018
 
@@ -10,7 +10,7 @@ from pyaudio import PyAudio,paInt16
 from AipSpeech import Translation
 
 class WWAV:
-    __framerate = 8000 # 帧速率
+    __framerate = 48000 # 帧速率
     __NUM_SAMPLES = 2000 # pyaudio内置缓冲大小
     __channels = 1 # 通道数
     __sampwidth = 2 # 取样宽度
