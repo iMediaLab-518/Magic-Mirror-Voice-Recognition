@@ -21,7 +21,7 @@ class Translation:
              return fp.read()
     #F:\Magic-Mirror-Voice-Recognition\wav\iflytek02.wav   
     def get_word(self,filePath):
-        word=self.client.asr(self.get_file_content(filePath), 'wav', 48000, {
+        word=self.client.asr(self.get_file_content(filePath), 'wav', 16000, {
     'dev_pid': '1536',
 })
         if word['err_no'] == 0: # 错误值为0（即正确）
