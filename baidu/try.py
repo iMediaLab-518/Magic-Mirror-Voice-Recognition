@@ -31,5 +31,5 @@ def getword(filePath):
             print(word['err_no']) # 否则返回 0 与 错误内容
 
 while(True):
-    os.system('arecord -r 16000 -f S16_LE -D "plughw:1,0" -d 4 test2.wav')
+    os.system('arecord -r 16000 -f S16_LE -D "plughw:1,0" -d 4 test.wav')
     getword(filePath)
